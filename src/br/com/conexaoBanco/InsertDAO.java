@@ -16,11 +16,7 @@ public class InsertDAO {
             
         }
         Statement st = ConexaoMySQL.getConexaoMySQL().createStatement();
-        ResultSet rs = st.executeQuery("SELECT * FROM raphael.tbl_usuarios");
-        
-        while (rs.next()){
-            String usuario = rs.getString("nome");      
-            System.out.println(usuario);
-        }
+        ResultSet rs = st.executeQuery("Insert into raphael.tbl_usuarios (id, nome, password) values('3', '', '')");
+
     }
 }

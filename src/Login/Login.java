@@ -4,9 +4,6 @@
  */
 package Login;
 
-import br.com.conexaoBanco.ConexaoMySQL;
-
-
 public class Login {
     
    

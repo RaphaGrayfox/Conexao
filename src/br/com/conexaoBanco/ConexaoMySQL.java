@@ -30,7 +30,11 @@ public class ConexaoMySQL {
 
             connection = DriverManager.getConnection(url, username, password);
 
-            
+            if (connection != null) {
+                status = ("STATUS--->Conectado com sucesso!");
+            } else {
+                status = ("STATUS--->Não foi possivel realizar conexão");
+            }
             return connection;
         
         }catch(ClassNotFoundException e) {  //Driver não encontrado
