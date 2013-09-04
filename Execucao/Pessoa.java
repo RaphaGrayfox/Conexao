@@ -14,11 +14,11 @@ public class Pessoa {
         String nome,
                senha;
         
-        /*nome = JOptionPane.showInputDialog("Digite o seu usuário : ");
+        nome = JOptionPane.showInputDialog("Digite o seu usuário : ");
         senha = JOptionPane.showInputDialog("Digite sua senha : ");
         
         pessoa.inserirUsuario(nome, senha);
-        */
+        
         pessoa.listarUsuarios();
         
     }
